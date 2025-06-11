@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0% auto;
+}
+
+section {
+    display: block;
+}
+
+
+.d-flex {
+    display: flex;
+ 
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-content {
+    align-content: space-around;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: rgb(136, 135, 135);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 1%;
+    list-style: none;
+}
+
+nav ul {
+    width: 45%;
+    font-size: 20px;
+}
+
+nav h3 {
+    font-size: 47px;
+    padding: 1% 0;
+}
+
+.bg-img {
+    background-image: url(../images/chicago-city-lights-at-night.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+.list ul {
+    padding-top: 30%;
+    padding-bottom: 2%;
+}
+
+.align-items {
+    align-items: center;
+}
+.left-card-aside-text{align-items: center;}
+.list ul i {
+    padding: 2% 1%;
+    margin-right: 1%;
+    border-radius: 50%;
+    align-items: center;
+    line-height: 0.2;
+    width: 43px;
+    height: 26px;
+
+    border-top: 4px solid blue;
+    border-right: 4px solid blue;
+    border-bottom: 4px solid blue;
+    border-left: 4px solid white;
+}
+
+i:hover {
+    color: white;
+}
+
+li:hover {
+    color: rgb(228, 139, 4);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 100%;
+    padding: 60px 40px;
+
+
+}
+
+.dropdown {
+    display: none;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    width: 90px;
+    box-shadow: 0px 0px 5px #afafaf;
+}
+
+.dropdown li {
+    padding: 5px;
+}
+
+.dropdown a {
+    color: black;
+}
+
+.dropdown-link {
+    position: relative;
+}
+
+.dropdown-link:hover .dropdown {
+    display: block;
+}
+
+.sec-nav ul {
+    width: 56%;
+    font-size: 12px;
+}
+
+.margintop {
+    margin-top: 2%;
+}
+
+.sec-nav a:hover {
+    color: black;
+    border-top: 0px solid blue;
+    border-left: 0px solid blue;
+    border-right: 0px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+.leftaside {
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.marginbottom {
+    margin-bottom: 2%;
+}
+
+.left-aside {
+    align-items: stretch;
+}
+
+.left-card-aside { 
+
+    width: 47%;
+
+}
+
+.padding-card-text {
+    padding: 8% 2%;
+}
+
+.margin-right {
+    margin-right: 3%
+}
+
+.shadow {
+    box-shadow: 7px -1px 17px #afafaf;
+}
+
+.padding-2 {
+    padding: 2%;
+}
+
+.right-card-left-aside {
+    padding-top: 2%;
+
+}
+
+.left-arrow {
+    margin-right: 10%;
+}
+
+.arrows i {
+    margin-top: 3%;
+    margin-right: 11%;
+    border-radius: 50%;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center
+}
+
+.right-aside {
+    width: 30%;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+.About h3 {
+    margin-bottom: 3%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    color: rgb(152, 151, 151);
+}
+.icon :hover{color: black;}
+
+.sec-mb {
+    margin-bottom: 2%;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.overlay-2 h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.overlay-2 p {
+    font-size: 12px;
+}
+
+.card:hover .overlay-2 {
+    padding: 2%;
+    opacity: 1;
+}
+
+.learn {
+    margin-left: 46%;
+    border: 1px solid gray;
+    border-radius: 29px;
+    padding: 1.5%;
+    justify-content: center;
+    display: flex;
+}
+
+.space {
+    padding: 5% 5% 5% 5%;
+}
+
+.color {
+    color: burlywood;
+}
+
+.font-size {
+    font-size: 30px
+}
+
+.position-fixed {
+    position: fixed;
+    right: 8%;
+    bottom: 5%;
+}
+
+footer {
+    background-color: black;
+}
+
+footer h3 {
+    font-size: 30px;
+    padding: 1% 1%;
+}
+
+.layout {padding: 5%;
+   left: 0;
+top: 0;
+    position: absolute;
+    
+}
+
+.position-relative {
+    position:relative;
+}
+
+.layout a {padding: 10%;
+    background-color:white;
+    border:1px solid black;
+}
