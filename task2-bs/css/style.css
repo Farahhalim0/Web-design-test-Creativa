@@ -1,0 +1,44 @@
+.logo img {
+  height: 40px;
+
+}
+
+.bg-sec {
+  height: 80%;
+  background-image: url(../img/a5fcbde5258262f42e8d47435151dd5e6c7fc8ba.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top right;
+}
+
+.btnsh {
+  width: 15%;
+}
+
+.btn-img {
+  width: 20%;
+}
+
+.logo-shop {
+  width: 90%;
+  height: 100%;
+}
+
+.navy-blue {
+  color: rgb(1, 1, 46);
+}
+
+
+.border-9 {
+  border: 9px solid white;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #0a013a, #2b2d60);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background: linear-gradient(to right, #0a013a, #2b2d60);
+}
+.bg-navy{background-color:rgb(1, 1, 46) ;}
