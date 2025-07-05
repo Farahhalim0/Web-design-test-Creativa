@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+ <div class="container">
+    <form class="row gy-3 mt-4" id="myForm">
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="enter your name" id="nameInput">
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="enter your ID" id="idInput">
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="enter your balance" id="balanceInput">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <tr>
+                <td>Farah</td>
+                <td>1000</td>
+                <td>100</td>
+                <td>
+                    <button class="btn btn-danger deleteBtn">Delete</button>
+                    <button class="btn btn-danger editBtn">Edit Balance</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
