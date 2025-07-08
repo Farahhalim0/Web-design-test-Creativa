@@ -1,0 +1,627 @@
+.w-cu {
+    width: 18%;
+}
+
+.w-cu-crd {
+    width: 35%;
+}
+
+.h-cu {
+    height: 24%;
+}
+
+.w-ul {
+    width: 40%;
+}
+
+.font-cu {
+    font-size: 60px;
+    font-weight: 600;
+
+
+}
+
+.shadow-cu {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    display: block !important;
+    position: absolute;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+.dropdown-blue-line {
+    opacity: 1;
+    border: none;
+    height: 3px;
+    background-color: var(--bs-primary);
+    margin: 0;
+}
+
+
+.dropdown-divider {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.delayed-text {
+    opacity: 0;
+    animation: showText 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.animated-text {
+    opacity: 0;
+    font-size: 10px;
+    animation: appearGrow 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+
+}
+
+.animated-text-p {
+    opacity: 0;
+    font-size: 10px;
+    animation: appearGrow-p 1s ease-in-out forwards;
+    animation-delay: 1s;
+
+
+}
+
+
+.animated-text-a {
+    opacity: 0;
+    font-size: 10px;
+    animation: appearGrow-a 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+
+
+}
+
+.btn-hover:hover {
+    background-color: #0257d8;
+    border: none;
+}
+
+.shiny-button {
+    position: relative;
+    display: inline-block;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.shiny-button::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.0) 100%);
+    transform: skewY(-8deg);
+}
+
+.shiny-button:hover::after {
+    animation: shineDown 0.6s ease;
+}
+
+@keyframes shineDown {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.shiny-button-card2 {
+    position: relative;
+    display: inline-block;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.shiny-button-card2::after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(18, 57, 231, 0.427) 100%);
+    transform: skewY(5deg);
+}
+
+.shiny-button-card2:hover::after {
+    opacity: 1;
+    animation: shineDown2 0.6s ease;
+}
+
+@keyframes shineDown2 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes showText {
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes appearGrow {
+    0% {
+        opacity: 0;
+        font-size: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 60px;
+    }
+}
+
+@keyframes appearGrow-p {
+    0% {
+        opacity: 0;
+        font-size: 10px;
+
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 20px;
+
+    }
+
+}
+
+@keyframes appearGrow-a {
+    0% {
+        opacity: 0;
+        font-size: 10px;
+
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 20px;
+
+    }
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.hr-1 {
+    opacity: 1.25;
+    width: 26px;
+
+}
+
+.hr-2 {
+    opacity: 1.25;
+    width: 67px;
+}
+
+.h-section {
+    height: 242px;
+}
+
+.w-cust {
+    width: 38%;
+}
+
+.h-cust-list {
+    height: 85%;
+}
+
+.w-list {
+    width: 30%;
+}
+
+.mt-8 {
+    margin-top: 8%;
+}
+
+.bg-service {
+    background-image: url(http://dazzlersoftware.com/testwp/munix-pro/wp-content/themes/munix-pro/img/service-bg.jpg );
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-opacity-cust {
+    background-color: #000000e1;
+}
+
+
+.hover-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+    z-index: 6;
+    padding: 2rem;
+}
+
+.card-hover:hover .hover-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-hover:hover hr {
+    visibility: hidden;
+}
+
+.card-hover:hover .social-icons {
+    transition-delay: 0.2s;
+}
+
+.tab-hov {
+
+    color: black;
+}
+
+.tab-hov:hover {
+    color: #0257d8;
+}
+
+.card-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    transition: transform 0.4s ease;
+    transform: translateY(0%);
+}
+
+.card-extra {
+    transform: translateY(100%);
+
+}
+
+.card-hover:hover .card-extra {
+    transform: translateY(0);
+}
+
+.border-bottom:hover {
+    visibility: hidden;
+}
+
+.social-icons {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    padding: 17px;
+    width: 90%;
+    margin-right: 48px;
+}
+
+.nav-pills .nav-link {
+    margin: 14px;
+    margin-left: 3px;
+    margin-right: 26px;
+}
+
+
+.btn-check:checked+.btn {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+
+.img-card img {
+    object-fit: cover;
+    width: 100%;
+    transition: 0.7s;
+}
+
+
+
+
+
+.hr-hov {
+    color: black;
+    width: 100%;
+    transition: 0.5s ease;
+    border-top: 2px solid black;
+}
+
+.text-hov {
+    color: black;
+    transition: 0.4s;
+}
+
+
+.card-hov:hover .img-card img {
+    transform: rotate(7deg) scale(1.2);
+}
+
+.card-hov:hover .icon-hov {
+    background-color: #0257d8;
+
+}
+
+.card-hov:hover .hr-hov {
+    opacity: 1;
+    width: 100%;
+    border-top: 2px solid #0257d8;
+}
+
+.card-hov:hover .text-hov {
+    color: #0257d8;
+}
+
+.icon-hov {
+    background-color: black;
+    transition: background-color 0.4s ease;
+}
+
+.card-hov:hover .icon-hov {
+    background-color: #0257d8;
+}
+
+.counter-box {
+
+    border-radius: 10px;
+
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.counter-box i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.counter-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.counter-title {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+.start-cu {
+    left: 60%;
+}
+
+.shadow-around {
+    filter: drop-shadow(-8px 0 15px rgba(0, 0, 0, 0.55));
+}
+
+.post-img {
+    transition: 0.3s ease-in-out;
+}
+
+.post-item:hover .post-img {
+    filter: brightness(80%);
+}
+
+.post-title {
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.post-item:hover .post-title {
+    color: #ccc;
+}
+
+
+.tag {
+
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tag:hover {
+    border: none;
+    background-color: #0d6efd;
+    color: white
+}
+
+.card-extra {
+    transform: translateY(57%);
+}
+
+.tab-item {
+    display: none;
+}
+
+.tab-item.show {
+    display: block;
+}
+
+
+.tab-btn {
+    background: transparent !important;
+    border: none;
+    transition: color 0.3s;
+}
+
+.tab-btn {
+    background: transparent !important;
+    border: none;
+    transition: color 0.3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active-tab {
+    color: #0d6efd !important;
+}
+
+.card-body-hover {
+    width: 75%;
+    height: 25%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.card:hover .card-body-hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-body-hover p::before {
+
+    font-weight: 900;
+    margin-right: 2px;
+    margin-left: 8px;
+}
+
+@media (max-width: 767.98px) {
+    .top-info {
+        display: none !important;
+    }
+
+
+    .w-list {
+        display: none !important;
+    }
+
+    .h-section {
+        gap: 0;
+    }
+
+    .card-title {
+        font-size: 1.1rem !important;
+    }
+
+    .hover-overlay p {
+        display: none !important;
+    }
+
+    .hover-overlay h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .tab-btn {
+        font-size: 0.6rem !important;
+        padding: 0.0rem 0.0rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem !important;
+
+    }
+
+    .overlay-heading {
+        font-size: 1.1rem !important;
+
+    }
+
+    .overlay-paragraph {
+        display: none !important;
+
+    }
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    opacity: 0;
+    transition: 0.3s ease;
+    padding: 2rem;
+}
+
+.card-hover:hover .hover-overlay {
+    opacity: 1;
+}
+
+ 
