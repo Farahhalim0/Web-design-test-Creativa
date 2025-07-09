@@ -588,7 +588,9 @@ body {
         font-size: 0.6rem !important;
         padding: 0.0rem 0.0rem !important;
     }
+    .padding-networking{padding-bottom: 20px;}
 }
+
 
 @media (max-width: 576px) {
     .card-title {
